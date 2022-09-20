@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de ocorrência</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+    <body>
+        <div id="login">
+            <form class="acessar">
+                <div class="card-cabecalho">
+                    <h2>Login</h2>
+                </div>
+                <div class="card-conteudo">
+                    <div class="card-area-conteudo">
+                        <label for="usuario">Usuário</label>
+                        <input type="text" id="usuario" autocomplete="off" required>
+                    </div>
+                    <div class="card-area-conteudo">
+                        <label for="password">Senhas</label>
+                        <input type="password" id="password" autocomplete="off" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[ !@#$%^&*_=+-]).{6,12}$" title="A senha deve conter entre 6 a 12 caracteres, deve conter pelo menos uma letra maiúscula, um número e não deve conter símbolos." required>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <input type="submit" value="login" class="submit">
+                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

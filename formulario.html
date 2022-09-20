@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Univerdade Católica de Brasília | Registro de ocorrência</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/formulario.css">
+    
+</head>
+<body>
+    <header>
+    <div class="caixa">    
+        <h1><img src="imagem/logo.svg" alt=""></h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formulario.html">Solicitações</a></li>
+                <li><a href="#">Solicitações fechadas</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <main>
+    <form class="cadastrar">
+        <Label for="nomesobrenome">Nome do Estudante</Label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="RA">RA</label>
+            <input type="text" id="RA" class="input-padrao" required>
+
+            <fieldset>
+                <legend>Escolha o contexto:</legend>
+                <select name="contexto" id="contexto">
+                    <option value="6">Pós EAD</option>
+                    <option value="42">Graduação EAD</option>
+                    <option value="37">Graduação Presencial</option>
+                    <option value="10">Graduação Presencial</option>
+                    <option value="40">Pós-Presenical</option>
+                    <option value="35">Mestrado</option>
+                </select>
+            </fieldset> 
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" cols="50" rows="10" class="input-padrao"></textarea>
+            <fieldset>
+                <legend>Tipo de atendimento</legend>
+                <label for="radio-whatssap"><input type="radio" name="contato" value="whatssap" id="radio-whatssap">Whatssap</label>
+                
+                <label for="radio-presencial"><input type="radio" name="contato" value="presencial" id="radio-presencial" checked>Presencial</label>
+                
+                <label for="radio-callcenter"><input type="radio" name="contato" value="callcenter" id="radio-callcenter">Callcenter</label>
+                
+            </fieldset>
+
+            <input type="submit" value="Registrar" class="enviar">
+        </form>
+    </main>
+    <footer class="rodape">
+        <p class="copyright">&copy; UCB</p>
+    </footer>
+</body>
+</html>
